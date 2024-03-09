@@ -700,6 +700,45 @@ Career
 }
 
 /* ==========================================================================
+   Skills
+   ========================================================================== */
+
+  .SkillBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .Skill {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+    margin-right: 0.3rem;
+  }
+
+  .SkillName {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0.3rem;
+  }
+
+  .Pumpkin {
+    background-image: url(../images/own_logo/Logo_colored.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(var(--accent1-color) 0px 2px);
+    width: 100%;
+  }
+
+  .Grey {
+    background-image: url(../images/own_logo/Logo_grey.png);
+  }
+
+
+
+/* ==========================================================================
    different Viewports
    ========================================================================== */
 
