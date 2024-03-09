@@ -87,13 +87,6 @@ main {
   margin-top: 180px;
 }
 
-.box {
-  background-color: var(--accent1-color);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: solid var(--background-color2);
-}
-
 footer {
   margin: 1rem;
 }
@@ -110,7 +103,7 @@ Code Gallery
 
 .CodeGallery div {
   border: var(--background-color2) solid 3px;
-  background-color: var(--background-color);
+  background-color: var(--accent1-color);
   border-radius: 1rem;
   height: 100px;
   width: 150px;
@@ -265,26 +258,28 @@ textarea {
   color: var(--text-color);
 }
 
-form .box {
-  max-width: 500px;
-  justify-items: center;
-  justify-self: center;
-}
-
 .form img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   width: 150px;
 }
 
 .form .button {
   margin-top: 1rem;
+  width: 30vw;
+  font-size: 1rem;
 }
 
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90vw;
+  background-color: var(--accent1-color);
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border: solid var(--background-color2);
 }
 
 .input-container {
@@ -303,7 +298,7 @@ form .box {
 .input-container input {
   border-bottom: 1px solid #555;
   background: var(--background-color2);
-  width: 45vw;
+  width: 65vw;
   padding: 0.5rem 0 0.2rem 0;
   text-align: left;
   margin: 0.5rem;
@@ -700,7 +695,7 @@ Career
 }
 
 /* ==========================================================================
-   Skills
+   Skills + Certificates
    ========================================================================== */
 
   .SkillBar {
@@ -736,7 +731,22 @@ Career
     background-image: url(../images/own_logo/Logo_grey.png);
   }
 
+  .Small {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+  }
 
+  .CertGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Cert {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
 
 /* ==========================================================================
    different Viewports

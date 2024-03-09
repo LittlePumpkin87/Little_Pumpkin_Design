@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             Display.classList.toggle("hidden");
+            
         });
     });
 });
-
 //////////////////////////////----------------------------GALLERY----------------------------//////////////////////////////
 
 $('.slider').each(function () {
