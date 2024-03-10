@@ -109,9 +109,6 @@ Code Gallery
   width: 150px;
   margin: 0 auto;
   margin-top: 10px;
-}
-
-.CodeGallery div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,7 +570,7 @@ Career
   flex-wrap: wrap;
 }
 
-.container:hover {
+.content:hover {
   cursor: pointer;
 }
 
@@ -699,69 +696,89 @@ Career
    Skills + Certificates
    ========================================================================== */
 
-  .SkillBar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
+.SkillBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
 
-  .Skill {
-    display: flex;
-    justify-content: left;
-    height: 80px;
-    margin-right: 0.3rem;
-  }
+.Skill {
+  display: flex;
+  justify-content: left;
+  height: 80px;
+  margin-right: 0.3rem;
+}
 
-  .SkillName {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 0.3rem;
-  }
+.SkillName {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 0.3rem;
+}
 
-  .Pumpkin {
-    background-image: url(../images/own_logo/Logo_colored.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(var(--accent1-color) 0px 2px);
-    width: 100%;
-  }
+.Pumpkin {
+  background-image: url(../images/own_logo/Logo_colored.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: drop-shadow(var(--accent1-color) 0px 2px);
+          filter: drop-shadow(var(--accent1-color) 0px 2px);
+  width: 100%;
+}
 
-  .Grey {
-    background-image: url(../images/own_logo/Logo_grey.png);
-  }
+.Grey {
+  background-image: url(../images/own_logo/Logo_grey.png);
+}
 
-  .Small {
-    width: 25px;
-    height: 25px;
-  }
+.Small {
+  width: 25px;
+  height: 25px;
+}
 
-  .CertGrid {
-    display: grid;
-    grid-template-columns: auto 2fr;
-  }
+.CertGrid {
+  display: grid;
+  grid-template-columns: auto 2fr;
+}
 
-  .Cert {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    height: 50px;
-  }
+.Cert {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  height: 50px;
+}
 
-  .CertName {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin-right: 1rem;
-  }
+.CertName {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-right: 1rem;
+}
 
 /* ==========================================================================
    different Viewports
    ========================================================================== */
+@media only screen and (min-width: 400px) {
+  .CertGrid {
+    display: block;
+  }
 
-@media only screen and (max-width: 900px) {}
+  .CertName {
+    display: block;
+  }
 
-@media only screen and (max-width: 600px) {}
+  .Cert {
+    display: block;
+  }
 
-@media only screen and (max-width: 300px) {}
+  .Small {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .CodeGallery div {
+    width: 80%;
+  }
+}
