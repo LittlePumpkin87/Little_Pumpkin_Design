@@ -781,4 +781,13 @@ Career
   .CodeGallery div {
     width: 80%;
   }
+
+  .Skill {
+    height: 40px;
+    margin-right: 0.3rem;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  
 }
