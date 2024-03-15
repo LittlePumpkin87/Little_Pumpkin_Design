@@ -609,6 +609,7 @@ Career
   padding: 0.3rem;
   border: solid var(--background-color2) 3px;
   width: 150px;
+  text-align-last: center;
 }
 
 .content::after,
