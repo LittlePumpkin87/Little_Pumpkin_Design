@@ -480,7 +480,7 @@ a.slide_btn {
 }
 
 .slide_btn.active {
-  color: var(--accent1-color);
+  color: var(--text-color);
   cursor: pointer;
   font-size: 4rem;
 }
@@ -520,9 +520,9 @@ a.slide_btn {
   padding: 0.3rem;
   width: 70%;
   margin: 0 auto;
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
+  border-radius: 2rem 0.5rem 2rem 0.5rem;
+  border-bottom: solid 0.4rem var(--background-color2);
+  border-left: solid 0.4rem var(--background-color2);
 }
 
 /*==========================================================================
