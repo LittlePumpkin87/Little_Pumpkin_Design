@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "typescript": "^5.4.2"
-  },
   "dependencies": {
     "jquery": "^3.7.1"
   }
