@@ -9,7 +9,7 @@ window.onscroll = function () {
         document.getElementById("header").style.top = "-300px";
     }
     prevScrollpos = currentScrollPos;
-}
+};
 
 //////////////////////////////----------------------------Timeline----------------------------//////////////////////////////
 
