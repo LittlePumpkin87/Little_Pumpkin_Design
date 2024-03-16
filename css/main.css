@@ -91,6 +91,19 @@ footer {
   margin: 1rem;
 }
 
+.download {
+  font-size: 1.5rem;
+  border: var(--background-color2) solid 0.2rem;
+  border-radius: 2rem;
+  background-color: var(--accent1-color);
+  padding: 0.2rem;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 /*==========================================================================
 Code Gallery
 ==========================================================================*/
@@ -251,7 +264,7 @@ textarea {
   resize: vertical;
   margin-top: -0.8rem;
   transition: all 0.2s ease-in;
-  width: 80%;
+  width: 100%;
   color: var(--text-color);
 }
 
@@ -263,7 +276,7 @@ textarea {
 
 .form .button {
   margin-top: 1rem;
-  width: 30vw;
+  width: 50%;
   font-size: 1rem;
 }
 
@@ -295,7 +308,7 @@ textarea {
 .input-container input {
   border-bottom: 1px solid #555;
   background: var(--background-color2);
-  width: 65vw;
+  width: 100%;
   padding: 0.5rem 0 0.2rem 0;
   text-align: left;
   margin: 0.5rem;
@@ -609,7 +622,8 @@ Career
   padding: 0.3rem;
   border: solid var(--background-color2) 3px;
   width: 150px;
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
 .content::after,
@@ -723,7 +737,7 @@ Career
   background-repeat: no-repeat;
   background-position: center;
   -webkit-filter: drop-shadow(var(--accent1-color) 0px 2px);
-          filter: drop-shadow(var(--accent1-color) 0px 2px);
+  filter: drop-shadow(var(--accent1-color) 0px 2px);
   width: 100%;
 }
 
@@ -783,12 +797,59 @@ Career
     width: 80%;
   }
 
+  .SkillName {
+    margin-left: 4rem;
+  }
+
   .Skill {
     height: 40px;
-    margin-right: 0.3rem;
+    margin-right: 4rem;
+  }
+
+  .content {
+    width: 200px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+.CertName {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 3rem;
+}
+html {
+  font-size: 1.2rem;
+}
+.form {
+  width: 50vw;
+}
+}
+
+@media only screen and (min-width: 820px) {
+  .content {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 300px;
   }
 }
 
-@media only screen and (min-width: 620px) {
-  
+@media only screen and (min-width: 1000px) {
+  .content {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    width: 500px;
+  }
+
+  .SkillName {
+    margin-left: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .Skill {
+    margin-right: 12rem;
+    height: 80px;
+  }  
+  .input-container {
+    width: 40vw;
+  }
 }
