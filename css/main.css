@@ -6,7 +6,7 @@ ROOT
   --background-color2: #d1681d;
   --accent1-color: #012900;
   --text-color: #FFF;
-  --shadow: 0 0.2rem 0.4rem rgba(0, 15, 1, 0.822);
+  --shadow: rgba(0, 0, 0, 0.767);
   --fonthead: "Berkshire Swash";
   --fonttext: "Signika Negative";
 }
@@ -81,6 +81,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
 /*==========================================================================
@@ -95,8 +96,6 @@ Code Gallery
 
 .CodeGallery div {
   border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
   background-color: var(--accent1-color);
   height: 6rem;
   width: 10rem;
@@ -105,6 +104,7 @@ Code Gallery
   display: flex;
   align-items: center;
   justify-content: center;
+  border: var(--background-color2) 0.3rem solid;
 }
 
 /*==========================================================================
@@ -178,7 +178,6 @@ Minesweeper
   border-radius: 1rem;
   padding: 0.3rem 1rem 0.4rem 1rem;
   -webkit-filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
-
   filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
 }
 
@@ -228,33 +227,34 @@ Button
   padding: 0.5rem;
   color: var(--text-color);
   font-family: var(--fonttext);
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.2rem var(--background-color2);
-  border-right: solid 0.2rem var(--background-color2);
-  border-bottom: solid 0.4rem transparent;
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border-top: solid 0.4rem transparent;
   border-left: solid 0.4rem transparent;
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border: solid var(--background-color2) 0.3rem;
+  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
 /*==========================================================================
 Form
 ==========================================================================*/
 textarea {
-  background: var(--background-color2);
+  background: var(--accent1-color);
   margin-top: 2rem;
   min-height: 8rem;
-  text-align: center;
+  text-align: left;
   resize: vertical;
   margin-top: -0.8rem;
   transition: all 0.2s ease-in;
   width: 100%;
   color: var(--text-color);
-  border-radius: 2rem 0.5rem 2rem 2rem;
+  border-radius: 0.5rem 2rem 2rem 2rem;
   border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
+  border-left: solid 0.4rem var(--background-color2);
 }
 
 .form img {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   width: 9rem;
 }
@@ -273,9 +273,11 @@ textarea {
   background-color: var(--accent1-color);
   padding: 1rem;
   margin: 0 auto;
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border-top: solid 0.4rem transparent;
+  border-left: solid 0.4rem transparent;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
+  filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
 }
 
 .input-container {
@@ -292,22 +294,21 @@ textarea {
 }
 
 .input-container input {
-  border-bottom: 0.1rem solid #555;
-  background: var(--background-color2);
-  width: 100%;
+  background: var(--accent1-color);
+  width: 95%;
   padding: 0.5rem 0 0.2rem 0;
   text-align: left;
   margin: 0.5rem;
   color: var(--text-color);
-  border-radius: 2rem 0.5rem 2rem 2rem;
+  border-radius: 0.5rem 2rem 2rem 2rem;
   border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
+  border-left: solid 0.4rem var(--background-color2);
 }
 
 .input-container input:focus~label,
 .input-container input:valid~label,
 .input-container input:not(:placeholder-shown)~label {
-  top: -1rem;
+  top: -1.3rem;
 }
 
 input {
@@ -315,13 +316,18 @@ input {
 }
 
 input:focus {
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   background-color: var(--accent1-color);
+  border-top: transparent solid;
+  border-left: transparent solid;
 }
 
 textarea:focus {
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   background-color: var(--accent1-color);
+  background-color: var(--accent1-color);
+  border-top: transparent solid;
+  border-left: transparent solid;
 }
 
 ::-webkit-input-placeholder {
@@ -329,7 +335,7 @@ textarea:focus {
 }
 
 .input-container input:active {
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   background-color: var(--accent1-color);
 }
 
@@ -460,6 +466,7 @@ a.slide_btn {
   color: var(--text-color);
   cursor: pointer;
   font-size: 4rem;
+  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
 .directional_nav {
@@ -475,6 +482,7 @@ a.slide_btn {
   margin: auto;
   position: absolute;
   top: 0;
+  filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
 }
 
 .next_btn {
@@ -483,6 +491,7 @@ a.slide_btn {
   position: absolute;
   right: 2rem;
   top: 0;
+  filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
 }
 
 .previous_btn,
@@ -587,7 +596,7 @@ Career
 }
 
 .container::after {
-  /* The "arrow"" on the timeline */
+  /* The "leaf" on the timeline */
   content: '';
   position: absolute;
   right: -1rem;
@@ -627,6 +636,7 @@ Career
   text-align-last: center;
   border: var(--background-color2) 0.3rem solid;
   border-radius: 0.5rem 2rem 0.5rem 2rem;
+  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
 .Details_right {
@@ -636,6 +646,7 @@ Career
   background-color: var(--accent1-color);
   min-width: 20rem;
   border-radius: 1rem;
+  filter: drop-shadow(var(--shadow) 0 0.2rem 0.3rem);
 }
 
 .Details_left {
@@ -685,8 +696,6 @@ Career
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-filter: drop-shadow(var(--accent1-color) 0 0.2rem);
-  filter: drop-shadow(var(--accent1-color) 0 0.2rem);
   width: 100%;
 }
 
