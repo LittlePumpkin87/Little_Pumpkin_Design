@@ -27,17 +27,17 @@ if (honeypot_validade($_REQUEST)) {
 if (isset ($_POST['buttonpoyx'])) {
   $to = "orders@little-pumpkin-design.com";
   $from = $_POST['emailpoyx'];
-  $vname = $_POST['vnamepoyx'];
-  $zname = $_POST['znamepoyx'];
-  $phone = $_POST['phonepoyx'];
-  $subject = "Anfrage Kontaktformular";
-  $subject2 = "Kopie deiner Nachricht";
-  $message = $vname . " " . $zname . $phone . " schrieb folgendes:" . "\n\n" . $_POST['messagepoyx'];
-  $message2 = "Hier ist eine Kopie deiner Nachricht " . $vname . "\n\n" . $_POST['messagepoyx'];
-  $headers = "From:" . $from;
-  $headers2 = "From:" . $to;
-  mail($to, $subject, $message, $headers);
-  mail($from, $subject2, $message2, $headers2);
+  $vnamepoyx = $_POST['vnamepoyx'];
+  $znamepoyx = $_POST['znamepoyx'];
+  $phonepoyx = $_POST['phonepoyx'];
+  $subjectpoyx = "Anfrage Kontaktformular";
+  $subjectpoyx2 = "Kopie deiner Nachricht";
+  $messagepoyx = $vname . " " . $zname . $phone . " schrieb folgendes:" . "\n\n" . $_POST['messagepoyx'];
+  $messagepoyx2 = "Hier ist eine Kopie deiner Nachricht " . $vname . "\n\n" . $_POST['messagepoyx2'];
+  $headerspoyx = "From:" . $from;
+  $headerspoyx2 = "From:" . $to;
+  mail($to, $subjectpoyx, $messagepoyx, $headerspoyx);
+  mail($from, $subjectpoyx2, $messagepoyx2, $headerspoyx2);
   echo '<meta http-equiv="refresh" content="0;url=https://little-pumpkin-design.com/thank_you.html" />';
 }
 ?>
