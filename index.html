@@ -40,11 +40,9 @@
   <!--==========================================================================
     Header and Navigation
   ==========================================================================-->
-
   <header id="header">
 
     <a href="index.html"><img src="images/own_logo/Logo_Schrift.png" width="300px" alt="Logo"></a>
-
     <nav>
       <ul>
         <li><a href="#AboutMe">Über mich</a></li>
@@ -53,10 +51,10 @@
         <li><a href="#Career">Karriere</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
+
     </nav>
 
   </header>
-
   <!--==========================================================================
     About me 
   ==========================================================================-->
@@ -348,9 +346,9 @@
       </div>
     </div>
     <br>
-<div class="download" >
-    <a href="Data/Lebenslauf tabelarisch.pdf">Lebenslauf<br>Download PDF</a>
-  </div>
+    <div class="download">
+      <a href="Data/Lebenslauf tabelarisch.pdf">Lebenslauf<br>Download PDF</a>
+    </div>
     <!--==========================================================================
     certificates 
   ==========================================================================-->
@@ -381,11 +379,11 @@
         <div class="Pumpkin Small"></div>
       </div>
       <h3 class="CertName">Kauffrau im Einzelhandel</h3>
-       </div>
-<br>
+    </div>
+    <br>
     <div class="download">
-    <a href="Data/Zertifikate_Zeugnisse.pdf">Zeugnisse<br>Download PDF</a>
-  </div>
+      <a href="Data/Zertifikate_Zeugnisse.pdf">Zeugnisse<br>Download PDF</a>
+    </div>
     <!--==========================================================================
     Skills 
   ==========================================================================-->
@@ -488,40 +486,45 @@
       <form class="box" action="PHP/form-handler.php" method="post">
 
         <div class="input-container">
-          <input type="text" id="vname" name="vname" required placeholder=" ">
-          <label for="vname">Vorname*</label>
+          <input type="text" id="vnamepoyx" name="vnamepoyx" required placeholder=" ">
+          <label for="vnamepoyx">Vorname*</label>
         </div>
 
         <div class="input-container">
-          <input type="text" id="zname" name="zname" required placeholder=" ">
-          <label for="zname">Nachname*</label>
+          <input type="text" id="znamepoyx" name="znamepoyx" required placeholder=" ">
+          <label for="znamepoyx">Nachname*</label>
         </div>
 
         <div class="input-container">
-          <input type="tel" id="phone" name="phone" required placeholder=" ">
-          <label for="phone">Telefon</label>
+          <input type="tel" id="phonepoyx" name="phonepoyx" required placeholder=" ">
+          <label for="phonepoyx">Telefon</label>
         </div>
 
         <div class="input-container">
-          <input type="email" id="email" name="email" required placeholder=" ">
-          <label for="email">Email-Adresse*</label>
+          <input type="email" id="emailpoyx" name="emailpoyx" required placeholder=" ">
+          <label for="emailpoyx">Email-Adresse*</label>
         </div>
 
         <div class="input-container">
-          <input type="email" id="email2" name="email2" required placeholder=" ">
-          <label for="email2">Email wiederholen*</label>
+          <input type="email" id="email2poyx" name="email2poyx" required placeholder=" ">
+          <label for="email2poyx">Email wiederholen*</label>
         </div>
 
+
+        <label class="ohnohoney" for="name"></label>
+        <input class="ohnohoney" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
+        <label class="ohnohoney" for="email"></label>
+        <input class="ohnohoney" autocomplete="off" type="email" id="email" name="email" placeholder="Your e-mail here">
+        <label class="ohnohoney" for="phone"></label>
+        <input class="ohnohoney" autocomplete="off" type="phone" id="phone" name="phone" placeholder="Your number here">
+        <textarea class="ohnohoney" wrap="soft" name="message" placeholder="Your message here"></textarea>
+        <input class="ohnohoney" type="submit" name="button" value="abschicken">
         <p>Ihre Nachricht an mich:</p>
-
         <img src="images/designs/PumpkinLurk.png" height="100rem">
-        <textarea wrap="soft" name="message"></textarea>
-
-        <input onclick="document.getElementById('phone').required = false;" class="button" type="submit" name="button"
-          value="abschicken">
-
+        <textarea wrap="soft" name="messagepoyx"></textarea>
+        <input onclick="document.getElementById('phonepoyx').required = false;" class="buttonpoyx" type="submit"
+          name="buttonpoyx" value="abschicken">
         <p id="Error"></p>
-
       </form>
     </div>
 
@@ -539,8 +542,6 @@
         }
       });
     </script>
-
-
 
   </main>
 

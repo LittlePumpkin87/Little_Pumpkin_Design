@@ -49,20 +49,20 @@ html {
   text-align: center;
 }
 
+main {
+  margin-top: 10rem;
+}
+
 h1 {
   font-family: var(--fonthead);
-  padding: 2rem;
   margin: 3rem;
+  padding: 2rem;
 }
 
 a {
   text-decoration: none;
   color: var(--text-color);
   font-family: var(--fonthead);
-}
-
-main {
-  margin-top: 10rem;
 }
 
 footer {
@@ -81,8 +81,10 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
   filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
+
 
 /*==========================================================================
 Code Gallery
@@ -188,23 +190,26 @@ Mainpage Menu and Header
 header {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   position: fixed;
   z-index: 999;
   background-color: var(--background-color2);
   width: 100vw;
   top: 0;
   transition: top 1s;
+  -webkit-animation: fadein;
+          animation: fadein;
   border-radius: 2rem 0.5rem 2rem 2rem;
   border-top: solid 0.4rem var(--accent1-color);
   border-right: solid 0.4rem var(--accent1-color);
 }
 
 nav ul {
+  list-style: none;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-around;
-  margin: 1rem;
+  justify-content: center;
 }
 
 nav a {
@@ -216,13 +221,16 @@ nav a {
 
 nav li {
   padding: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*==========================================================================
 Button
 ==========================================================================*/
 
-.button {
+.buttonpoyx {
   background-color: var(--accent1-color);
   padding: 0.5rem;
   color: var(--text-color);
@@ -232,6 +240,7 @@ Button
   border-left: solid 0.4rem transparent;
   border-radius: 0.5rem 2rem 2rem 2rem;
   border: solid var(--background-color2) 0.3rem;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
   filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
@@ -342,6 +351,17 @@ textarea:focus {
 #Error {
   color: red;
   text-align: center;
+}
+
+
+.ohnohoney{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 /*==========================================================================
@@ -466,6 +486,7 @@ a.slide_btn {
   color: var(--text-color);
   cursor: pointer;
   font-size: 4rem;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
   filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
@@ -482,6 +503,7 @@ a.slide_btn {
   margin: auto;
   position: absolute;
   top: 0;
+  -webkit-filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
   filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
 }
 
@@ -491,6 +513,7 @@ a.slide_btn {
   position: absolute;
   right: 2rem;
   top: 0;
+  -webkit-filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
   filter: drop-shadow(var(--shadow)0.5rem 0.5rem 0.1rem);
 }
 
@@ -636,6 +659,7 @@ Career
   text-align-last: center;
   border: var(--background-color2) 0.3rem solid;
   border-radius: 0.5rem 2rem 0.5rem 2rem;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
   filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
 
@@ -646,6 +670,7 @@ Career
   background-color: var(--accent1-color);
   min-width: 20rem;
   border-radius: 1rem;
+  -webkit-filter: drop-shadow(var(--shadow) 0 0.2rem 0.3rem);
   filter: drop-shadow(var(--shadow) 0 0.2rem 0.3rem);
 }
 

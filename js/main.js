@@ -6,7 +6,7 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("header").style.top = "0";
     } else {
-        document.getElementById("header").style.top = "-300px";
+        document.getElementById("header").style.top = "-20rem";
     }
     prevScrollpos = currentScrollPos;
 };
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             Display.classList.toggle("hidden");
-            
+
         });
     });
 });
