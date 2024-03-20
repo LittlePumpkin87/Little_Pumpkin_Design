@@ -32,8 +32,8 @@ if (isset ($_POST['buttonpoyx'])) {
   $phonepoyx = $_POST['phonepoyx'];
   $subjectpoyx = "Anfrage Kontaktformular";
   $subjectpoyx2 = "Kopie deiner Nachricht";
-  $messagepoyx = $vnamepoyx . " " . $znamepoyx . " " . $phonepoyx . " schrieb folgendes:" . "\n\n" . $_POST['messagepoyx'];
-  $messagepoyx2 = "Hier ist eine Kopie deiner Nachricht " . $vnamepoyx . "\n\n" . $_POST['messagepoyx2'];
+  $messagepoyx = $vnamepoyx . " " . $znamepoyx . "\n\n" . $phonepoyx . "\n\n" . "schreibt folgendes:" . "\n\n" . $_POST['messagepoyx'];
+  $messagepoyx2 = "Hallo $vnamepoyx . Hier ist eine Kopie deiner Nachricht " . "\n\n" . $_POST['messagepoyx'];
   $headerspoyx = "From:" . $from;
   $headerspoyx2 = "From:" . $to;
   mail($to, $subjectpoyx, $messagepoyx, $headerspoyx);
