@@ -32,7 +32,7 @@ if (isset ($_POST['buttonpoyx'])) {
   $phonepoyx = $_POST['phonepoyx'];
   $subjectpoyx = "Anfrage Kontaktformular";
   $subjectpoyx2 = "Kopie deiner Nachricht";
-  $messagepoyx = $vname . " " . $zname . $phone . " schrieb folgendes:" . "\n\n" . $_POST['messagepoyx'];
+  $messagepoyx = $vname . " " . $zname . "\n\n" . $phone . "\n\n" . " schrieb folgendes:" . "\n\n" . $_POST['messagepoyx'];
   $messagepoyx2 = "Hier ist eine Kopie deiner Nachricht " . $vname . "\n\n" . $_POST['messagepoyx2'];
   $headerspoyx = "From:" . $from;
   $headerspoyx2 = "From:" . $to;
