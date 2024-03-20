@@ -53,6 +53,15 @@ main {
   margin-top: 10rem;
 }
 
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+footer a {
+  margin: 0.5rem;
+}
 h1 {
   font-family: var(--fonthead);
   margin: 3rem;
@@ -63,10 +72,6 @@ a {
   text-decoration: none;
   color: var(--text-color);
   font-family: var(--fonthead);
-}
-
-footer {
-  margin: 1rem;
 }
 
 .download {
