@@ -483,7 +483,7 @@
 
     <div class="form">
 
-      <form class="box" action="PHP/form-handler.php" method="post">
+      <form class="box" action="PHP/form-handler.php" method="post" onsubmit="return checkHoney()">
 
         <div class="input-container">
           <input type="text" id="vnamepoyx" name="vnamepoyx" required placeholder=" ">
@@ -509,19 +509,29 @@
           <input type="email" id="email2poyx" name="email2poyx" required placeholder=" ">
           <label for="email2poyx">Email wiederholen*</label>
         </div>
-        <label id="ohnohoney" for="name"></label>
-        <input id="ohnohoney" autocomplete="off" type="text" id="name" name="name" value="spambot" placeholder="Your name here">
+        <input id="ohnohoney" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
+        <input id="ohnohoney" autocomplete="off" type="text" id="phone" name="phone" placeholder="Your phone number here">
+        <input id="ohnohoney" autocomplete="off" type="text" id="adress" name="adress" placeholder="Your adress here">
+        <input id="ohnohoney" autocomplete="off" type="text" id="email" name="email" placeholder="Your email here">
+
         <p>Ihre Nachricht an mich:</p>
         <img src="images/designs/PumpkinLurk.png" height="100rem">
         <textarea wrap="soft" name="messagepoyx"></textarea>
         <input onclick="document.getElementById('phonepoyx').required = false;" class="buttonpoyx" type="submit"
           name="buttonpoyx" value="abschicken">
-          <br>
+        <br>
         <p id="Error"></p>
         <br>
-        <p>Mit dem Absenden der Nachricht, akzeptieren sie unsere <a href="policy.html">Datenschutzbestimmungen</a></p>
+        <p>Mit dem Absenden des Kontaktformulars, akzeptieren sie unsere <a href="policy.html">Datenschutzbestimmungen</a></p>
 
         <script>
+          function checkHoney() {
+            if (document.getElementById("ohnohoney").value !== "") {
+            alert("No bots allowed here!");
+            return false; 
+        }
+        return true; 
+    }
           let formContact = document.querySelector(".box");
           let error = document.querySelector("#Error");
           formContact.addEventListener("submit", function (evt) {
