@@ -198,7 +198,7 @@ header {
   top: 0;
   transition: top 1s;
   -webkit-animation: fadein;
-          animation: fadein;
+  animation: fadein;
   border-radius: 2rem 0.5rem 2rem 2rem;
   border-top: solid 0.4rem var(--accent1-color);
   border-right: solid 0.4rem var(--accent1-color);
@@ -354,7 +354,7 @@ textarea:focus {
 }
 
 
-.ohnohoney{
+.ohnohoney {
   opacity: 0;
   position: absolute;
   top: 0;
