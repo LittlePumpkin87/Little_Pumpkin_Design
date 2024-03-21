@@ -235,7 +235,7 @@ nav li {
 Button
 ==========================================================================*/
 
-.buttonpoyx {
+.button {
   background-color: var(--accent1-color);
   padding: 0.5rem;
   color: var(--text-color);
@@ -359,7 +359,7 @@ textarea:focus {
 }
 
 
-#ohnohoney {
+#adress {
   opacity: 0;
   position: absolute;
   top: 0;
