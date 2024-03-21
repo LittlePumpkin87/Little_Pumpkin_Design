@@ -11,6 +11,14 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 };
 
+$("#HamToggle").on("click", function() {
+    let HamburgerLink = document.getElementsByClassName("HamburgerLink");
+    let MobileNav = document.getElementById("HamToggle");
+
+    if (MobileNav.click) {
+        $(HamburgerLink).toggleClass("active");
+    }
+});
 //////////////////////////////----------------------------Timeline----------------------------//////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {

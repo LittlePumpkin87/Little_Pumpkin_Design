@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="de">
-
+<html lang="de">
 <head>
   <meta charset="utf-8" />
   <title>Little-Pumpkin-Design</title>
@@ -10,38 +9,40 @@
     Property 
   ==========================================================================-->
   <meta property="og:title" content="Little-Pumpkin-Design" />
-  <meta property="og:type" content="Webdesign Design graphics Illustrator freelancer Portfolio" />
+  <meta property="og:type" content="Portfolio Website" />
+  <meta property="og:description" content="Web Designer, Web Developer, Design, Freelancer, Graphic Designer, Illustrator">
   <meta property="og:url" content="https://www.little-pumpkin-design.com" />
-  <meta property="og:image" content="#" />
   <!--==========================================================================
     Favicon
   ==========================================================================-->
-  <link rel="manifest" href="favicon_package/site.webmanifest" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png" />
-  <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#d1681d" />
+  <link rel="manifest" href="/images/favicon_package_v0.16/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0.16/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0.16/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0.16/favicon-16x16.png" />
+  <link rel="mask-icon" href="/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#d1681d" />
   <meta name="msapplication-TileColor" content="#d1681d" />
   <meta name="theme-color" content="#d1681d" />
   <!--==========================================================================
     stylesheet css
   ==========================================================================-->
-  <link rel="stylesheet" href="css/main.min.css" />
+ 
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/Form.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/carreer.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  
   <!--==========================================================================
     Scripts 
   ==========================================================================-->
   <script src="node_modules/jquery/dist/jquery.min.js" defer type="text/javascript"></script>
-  <script src="js/main.min.js" defer type="text/javascript"></script>
+  <script src="js/main.js" defer type="text/javascript"></script>
 </head>
-
-
 <body>
-
   <!--==========================================================================
     Header and Navigation
   ==========================================================================-->
   <header id="header">
-
     <a href="index.html"><img src="images/own_logo/Logo_Schrift.png" width="300px" alt="Logo"></a>
     <nav>
       <ul>
@@ -51,10 +52,33 @@
         <li><a href="#Career">Karriere</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
-
     </nav>
-
   </header>
+  <header>
+  <div id="MobileNav">
+    <a href="index.html"><img src="images/own_logo/Logo_Schrift.png" width="300px" alt="Logo"></a>
+      <div id="HamToggle">
+  <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+    <path
+          class="line top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+    <path
+          class="line middle"
+          d="m 30,50 h 40" />
+    <path
+          class="line bottom"
+          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+  </svg>
+</div>
+    <div class="HamburgerLink">
+      <a href="#AboutMe">Über mich</a>
+      <a href="#Designs">Designs</a>
+      <a href="#Referenzen">Referenzen</a>
+      <a href="#Career">Karriere</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+</div>
+</header>
   <!--==========================================================================
     About me 
   ==========================================================================-->
@@ -104,7 +128,7 @@
           <div class="slide" role="img" aria-labelledby="Princess Mononoke Digital Drawing">
             <h3>Princess Mononoke Digital Drawing</h3>
           </div>
-          <div class="slide" role="img" aria-labelledby="Logo Design Freelance Division">
+          <div class="slide" role="img" aria-labelledby="Logo Design Freelancer Division">
             <h3>Hand Drawn Logo Design Freelancer Division</h3>
           </div>
         </div>
@@ -151,7 +175,7 @@
     <h1 id="Referenzen">Referenzen</h1>
 
     <div>
-      <ul class="CodeGallery">
+      <ul class="RefGallery">
         <div>
           <a href="retro-games.html">
             <h3>Retro Games</h3>
