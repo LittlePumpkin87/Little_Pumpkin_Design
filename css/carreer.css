@@ -97,10 +97,6 @@ Career
   border-radius: 1rem;
 }
 
-.hidden {
-  display: none;
-}
-
 #Education {
   background-color: var(--background-color2);
   border: solid var(--accent1-color) 0.3rem;

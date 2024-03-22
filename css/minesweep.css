@@ -71,3 +71,7 @@ Minesweeper
   -webkit-filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
   filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
 }
+
+.hidden {
+  display: none;
+}

@@ -140,6 +140,10 @@ header {
   border-radius: 0.5rem 0.5rem 2rem 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 #header {
   transition: top 1s;
 }
@@ -347,9 +351,5 @@ nav li {
   .Skill {
     margin-right: 12rem;
     height: 6rem;
-  }
-
-  .input-container {
-    width: 40vw;
   }
 }
