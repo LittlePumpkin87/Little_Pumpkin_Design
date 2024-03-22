@@ -4,6 +4,7 @@ ROOT
 :root {
   --background-color: #292929;
   --background-color2: #d1681d;
+  --Subtlebackground-color: #eb995e;
   --accent1-color: #012900;
   --text-color: #FFF;
   --shadow: rgba(0, 0, 0, 0.767);
@@ -50,22 +51,23 @@ html {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 footer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  background-color: var(--background-color2);
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
 }
 
-footer a {
-  margin: 0.5rem;
-}
 h1 {
   font-family: var(--fonthead);
-  margin: 3rem;
-  padding: 2rem;
+  margin: 5rem;
 }
 
 a {
@@ -96,10 +98,7 @@ a {
   color: var(--text-color);
   font-family: var(--fonttext);
   border-radius: 0.5rem 2rem 2rem 2rem;
-  border-top: solid 0.4rem transparent;
-  border-left: solid 0.4rem transparent;
-  border-radius: 0.5rem 2rem 2rem 2rem;
-  border: solid var(--background-color2) 0.3rem;
+  border: solid 0.2rem var(--background-color2);
   -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
   filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
 }
@@ -129,7 +128,6 @@ Reference Gallery
 /*==========================================================================
 Mainpage Menu and Header
 ==========================================================================*/
-
 header {
   display: grid;
   grid-template-columns: 1fr;
@@ -139,12 +137,11 @@ header {
   background-color: var(--background-color2);
   width: 100vw;
   top: 0;
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
+}
+
+#header {
   transition: top 1s;
-  -webkit-animation: fadein;
-  animation: fadein;
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--accent1-color);
-  border-right: solid 0.4rem var(--accent1-color);
 }
 
 nav ul {
@@ -157,9 +154,9 @@ nav ul {
 
 nav a {
   border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--accent1-color);
-  border-right: solid 0.4rem var(--accent1-color);
-  padding: 0.2rem;
+  border-top: solid 0.2rem var(--accent1-color);
+  border-right: solid 0.2rem var(--accent1-color);
+  padding: 0.3rem;
 }
 
 nav li {
@@ -169,180 +166,190 @@ nav li {
   justify-content: center;
 }
 
-.ham {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 600ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 .hamRotate.active {
   transform: rotate(45deg);
 }
+
 .hamRotate180.active {
   transform: rotate(180deg);
 }
+
 .line {
-  fill:none;
+  fill: none;
   transition: stroke-dasharray 800ms, stroke-dashoffset 800ms;
-  stroke:var(--background-color2);
-  stroke-width:5.5;
-  stroke-linecap:round;
+  stroke: var(--accent1-color);
+  stroke-width: 6;
+  stroke-linecap: round;
 }
+
 .ham1 .top {
   stroke-dasharray: 40 139;
 }
+
 .ham1 .bottom {
   stroke-dasharray: 40 180;
 }
+
 .ham1.active .top {
   stroke-dashoffset: -98px;
 }
+
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
 
 #HamToggle {
-  position:absolute;
+  position: absolute;
   z-index: 999;
   margin-left: 75%;
-  margin-top: 1rem;
-  background-color: var(--accent1-color);
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  filter: drop-shadow(var(--background-color2)0.1rem 0.1rem 2rem)
-  drop-shadow(var(--background-color2)-0.1rem -0.1rem 2rem);
-  border: var(--text-color) solid 2px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 600ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: -6rem;
 }
 
 .HamburgerLink {
-  transform: translate(50rem);
-  transition: ease-out 800ms;
-  background-color: var(--accent1-color);
-  border-radius: 1rem;
-  padding: 1rem;
-  width: 50vw;
+  transform: translate(110vw);
+  transition: ease-out 1000ms;
+  background-color: var(--background-color2);
   position: absolute;
-  margin-top: 5rem;
-  border-radius: 1rem;
-  border: var(--background-color2) 4px solid;
-  filter: drop-shadow(var(--background-color2)0.1rem 0.1rem 5rem)
-  drop-shadow(var(--background-color2)-0.1rem -0.1rem 5rem);
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
 }
 
 .HamburgerLink.active {
-  transform: translate(10rem);
-  margin-top: 5rem;
+  transform: translate(60vw);
+  background-color: var(--accent1-color);
 }
 
 .HamburgerLink a {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 2rem 0.5rem 2rem 2rem;
+  border-bottom: solid 0.2rem var(--background-color2);
+  border-right: solid 0.2rem var(--background-color2);
+  padding: 0.3rem;
 }
 
 #MobileNav {
+  position: -webkit-sticky;
   position: sticky;
+}
+
+#MobileNav a {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 /* ==========================================================================
    different Viewports
    ========================================================================== */
-   @media only screen and (min-width: 200px) {
-    .CertGrid {
-      display: block;
-    }
-  
-    .CertName {
-      display: block;
-    }
-  
-    .Cert {
-      display: block;
-    }
-  
-    .Small {
-      margin: auto;
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    #header {
-      display: none;
-    }
+@media only screen and (min-width: 200px) {
+  .CertGrid {
+    display: block;
   }
-  
-  @media only screen and (min-width: 620px) {
-    .CodeGallery div {
-      width: 80%;
-    }
-  
-    .SkillName {
-      margin-left: 4rem;
-    }
-  
-    .Skill {
-      height: 3rem;
-      margin-right: 4rem;
-    }
-  
-    .content {
-      width: 10.5rem;
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
-  
-    .CertName {
-      font-size: 1.5rem;
-    }
-  
-    h1 {
-      font-size: 3rem;
-    }
-  
-    html {
-      font-size: 1.2rem;
-    }
-  
-    .form {
-      width: 50vw;
-    }
-  }
-  
-  @media only screen and (min-width: 820px) {
-    .content {
-      margin-right: 4rem;
-      margin-left: 4rem;
-      width: 20rem;
-    }
 
-    #header {
-      display: grid;
-    }
-#MobileNav {
-  display: none;
+  .CertName {
+    display: block;
+  }
+
+  .Cert {
+    display: block;
+  }
+
+  .Small {
+    margin: auto;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #header {
+    display: none;
+  }
 }
+
+@media only screen and (min-width: 620px) {
+  .CodeGallery div {
+    width: 80%;
   }
-  
-  @media only screen and (min-width: 1000px) {
-    .content {
-      margin-right: 6rem;
-      margin-left: 6rem;
-      width: 50rem;
-    }
-  
-    .SkillName {
-      margin-left: 12rem;
-      font-size: 1.5rem;
-    }
-  
-    .Skill {
-      margin-right: 12rem;
-      height: 6rem;
-    }
-  
-    .input-container {
-      width: 40vw;
-    }
+
+  .SkillName {
+    margin-left: 4rem;
   }
+
+  .Skill {
+    height: 3rem;
+    margin-right: 4rem;
+  }
+
+  .content {
+    width: 10.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .CertName {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  html {
+    font-size: 1.2rem;
+  }
+
+  .form {
+    width: 50vw;
+  }
+
+  #header {
+    display: grid;
+  }
+
+  #MobileNav {
+    display: none;
+  }
+
+  main {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .content {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .content {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    width: 50rem;
+  }
+
+  .SkillName {
+    margin-left: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .Skill {
+    margin-right: 12rem;
+    height: 6rem;
+  }
+
+  .input-container {
+    width: 40vw;
+  }
+}

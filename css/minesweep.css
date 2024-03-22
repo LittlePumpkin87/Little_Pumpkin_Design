@@ -2,72 +2,72 @@
 Minesweeper
 ==========================================================================*/
 .game-board {
-    border: 0.2rem solid var(--background-color2);
-    position: relative;
-    width: 23rem;
-    margin: 0 auto;
-  }
-  
-  .grid {
-    height: calc(3rem * 10);
-    display: flex;
-    flex-wrap: wrap;
-    width: 23rem;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .cell {
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    outline: 0.1rem dashed var(--background-color2);
-  }
-  
-  .cell-clicked {
-    background-color: var(--background-color2);
-    cursor: not-allowed;
-  }
-  
-  .cell-bomb {
-    background-color: var(--background-color2);
-    background-image: url("../images/bomb.png");
-    background-size: contain;
-    cursor: not-allowed;
-  }
-  
-  .end-game-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.747);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-  
-  .end-game-text {
-    font-size: 5rem;
-    font-family: var(--fonttext);
-    text-transform: uppercase;
-    -webkit-filter: drop-shadow(var(--background-color2)0.3rem 0.4rem 0.1rem) drop-shadow(var(--accent1-color)-0.3rem -0.4rem 0.1rem);
-    filter: drop-shadow(var(--background-color2)0.3rem 0.4rem 0.1rem) drop-shadow(var(--accent1-color)-0.3rem -0.4rem 0.1rem);
-  }
-  
-  .btn {
-    font-size: 2rem;
-    font-family: var(--fonttext);
-    cursor: pointer;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    border: var(--text-color) dotted 0.2rem;
-    border-radius: 1rem;
-    padding: 0.3rem 1rem 0.4rem 1rem;
-    -webkit-filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
-    filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
-  }
+  border: 0.2rem solid var(--background-color2);
+  position: relative;
+  width: 23rem;
+  margin: 0 auto;
+}
+
+.grid {
+  height: calc(3rem * 10);
+  display: flex;
+  flex-wrap: wrap;
+  width: 23rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  outline: 0.1rem dashed var(--background-color2);
+}
+
+.cell-clicked {
+  background-color: var(--background-color2);
+  cursor: not-allowed;
+}
+
+.cell-bomb {
+  background-color: var(--background-color2);
+  background-image: url("../images/bomb.png");
+  background-size: contain;
+  cursor: not-allowed;
+}
+
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.747);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.end-game-text {
+  font-size: 5rem;
+  font-family: var(--fonttext);
+  text-transform: uppercase;
+  -webkit-filter: drop-shadow(var(--background-color2)0.3rem 0.4rem 0.1rem) drop-shadow(var(--accent1-color)-0.3rem -0.4rem 0.1rem);
+  filter: drop-shadow(var(--background-color2)0.3rem 0.4rem 0.1rem) drop-shadow(var(--accent1-color)-0.3rem -0.4rem 0.1rem);
+}
+
+.btn {
+  font-size: 2rem;
+  font-family: var(--fonttext);
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: var(--text-color) dotted 0.2rem;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem 0.4rem 1rem;
+  -webkit-filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
+  filter: drop-shadow(var(--accent1-color) 0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)-0.5rem -0.5rem 0.3rem) drop-shadow(var(--accent1-color)-0.5rem 0.5rem 0.3rem) drop-shadow(var(--background-color2)0.5rem -0.5rem 0.3rem);
+}

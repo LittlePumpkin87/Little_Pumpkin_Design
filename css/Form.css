@@ -2,118 +2,105 @@
 Form
 ==========================================================================*/
 textarea {
-    background: var(--accent1-color);
-    margin-top: 2rem;
-    min-height: 8rem;
-    text-align: left;
-    resize: vertical;
-    margin-top: -0.8rem;
-    transition: all 0.2s ease-in;
-    width: 100%;
-    color: var(--text-color);
-    border-radius: 0.5rem 2rem 2rem 2rem;
-    border-top: solid 0.4rem var(--background-color2);
-    border-left: solid 0.4rem var(--background-color2);
-  }
-  
-  .form img {
-    display: inline-block;
-    margin: 0 auto;
-    width: 9rem;
-  }
-  
-  .form .button {
-    margin-top: 1rem;
-    width: 50%;
-    font-size: 1rem;
-  }
-  
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    background-color: var(--accent1-color);
-    padding: 1rem;
-    margin: 0 auto;
-    border-radius: 0.5rem 2rem 2rem 2rem;
-    border-top: solid 0.4rem transparent;
-    border-left: solid 0.4rem transparent;
-    -webkit-filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
-    filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
-  }
-  
-  .input-container {
-    position: relative;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-  }
-  
-  .input-container label {
-    position: absolute;
-    top: 0.9rem;
-    left: 1.7rem;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .input-container input {
-    background: var(--accent1-color);
-    width: 95%;
-    padding: 0.5rem 0 0.2rem 0;
-    text-align: left;
-    margin: 0.5rem;
-    color: var(--text-color);
-    border-radius: 0.5rem 2rem 2rem 2rem;
-    border-top: solid 0.4rem var(--background-color2);
-    border-left: solid 0.4rem var(--background-color2);
-  }
-  
-  .input-container input:focus~label,
-  .input-container input:valid~label,
-  .input-container input:not(:placeholder-shown)~label {
-    top: -1.3rem;
-  }
-  
-  input {
-    transition: all 0.2s ease-in;
-  }
-  
-  input:focus {
-    border-radius: 0.2rem;
-    background-color: var(--accent1-color);
-    border-top: transparent solid;
-    border-left: transparent solid;
-  }
-  
-  textarea:focus {
-    border-radius: 0.2rem;
-    background-color: var(--accent1-color);
-    background-color: var(--accent1-color);
-    border-top: transparent solid;
-    border-left: transparent solid;
-  }
-  
-  ::-webkit-input-placeholder {
-    color: var(--text-color);
-  }
-  
-  .input-container input:active {
-    border-radius: 0.2rem;
-    background-color: var(--accent1-color);
-  }
-  
-  #Error {
-    color: red;
-    text-align: center;
-  }
-  
-  
-  #adress {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 0;
-    z-index: -1;
-  }
+  background: var(--accent1-color);
+  min-height: 8rem;
+  text-align: left;
+  resize: vertical;
+  transition: all 0.2s ease-in;
+  width: 100%;
+  color: var(--text-color);
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border: solid 0.2rem var(--background-color2);
+}
+
+.form .button {
+  margin-top: 1rem;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  background-color: var(--accent1-color);
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border-top: solid 0.4rem transparent;
+  border-left: solid 0.4rem transparent;
+  -webkit-filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
+  filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.input-container label {
+  position: absolute;
+  top: 0.9rem;
+  left: 1.7rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+  background: var(--accent1-color);
+  width: 95%;
+  padding: 0.5rem 0 0.2rem 0;
+  text-align: left;
+  margin: 0.5rem;
+  color: var(--text-color);
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border: solid 0.2rem var(--background-color2);
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label,
+.input-container input:not(:placeholder-shown)~label {
+  top: -1.3rem;
+}
+
+input {
+  transition: all 0.2s ease-in;
+}
+
+input:focus {
+  border-radius: 0.2rem;
+  background-color: var(--accent1-color);
+  border: transparent solid;
+}
+
+textarea:focus {
+  border-radius: 0.2rem;
+  background-color: var(--accent1-color);
+  border: transparent solid;
+}
+
+::-webkit-input-placeholder {
+  color: var(--text-color);
+}
+
+.input-container input:active {
+  border-radius: 0.2rem;
+  background-color: var(--accent1-color);
+}
+
+#Error {
+  color: red;
+  text-align: center;
+}
+
+
+#adress {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
