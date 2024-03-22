@@ -1,7 +1,5 @@
 <?php
-if (!empty ($_POST['adress'])) {
-  echo "No Bots allowed here!";
-} else if (isset ($_POST['button'])) {
+if (isset ($_POST['button'])) {
   $to = "orders@little-pumpkin-design.com";
   $from = $_POST['email'];
   $vname = $_POST['vname'];
