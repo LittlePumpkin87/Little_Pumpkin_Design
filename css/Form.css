@@ -2,7 +2,7 @@
 Form
 ==========================================================================*/
 textarea {
-  background: var(--accent1-color);
+  background: var(--accentGreen);
   min-height: 8rem;
   text-align: left;
   resize: vertical;
@@ -10,7 +10,9 @@ textarea {
   width: 100%;
   color: var(--text-color);
   border-radius: 0.5rem 2rem 2rem 2rem;
-  border: solid 0.2rem var(--background-color2);
+  border: solid 0.2rem var(--accentOrange);
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 .form .button {
@@ -24,14 +26,14 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 90vw;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   padding: 1rem;
   margin: 0 auto;
   border-radius: 0.5rem 2rem 2rem 2rem;
   border-top: solid 0.4rem transparent;
   border-left: solid 0.4rem transparent;
-  -webkit-filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
-  filter: drop-shadow(var(--shadow)0 0.3rem 0.5rem) drop-shadow(var(--shadow)0 -0.3rem 0.5rem);
+  -webkit-filter: var(--shadow);
+          filter: var(--shadow);
 }
 
 .input-container {
@@ -48,14 +50,14 @@ textarea {
 }
 
 .input-container input {
-  background: var(--accent1-color);
+  background: var(--accentGreen);
   width: 95%;
   padding: 0.5rem 0 0.2rem 0;
   text-align: left;
   margin: 0.5rem;
   color: var(--text-color);
   border-radius: 0.5rem 2rem 2rem 2rem;
-  border: solid 0.2rem var(--background-color2);
+  border: solid 0.2rem var(--accentOrange);
 }
 
 .input-container input:focus~label,
@@ -65,19 +67,21 @@ textarea {
 }
 
 input {
-  transition: all 0.2s ease-in;
+  transition: all 500ms ease;
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 input:focus {
   border-radius: 0.2rem;
-  background-color: var(--accent1-color);
-  border: transparent solid;
+  background-color: var(--accentGreen);
+  outline: none;
 }
 
 textarea:focus {
   border-radius: 0.2rem;
-  background-color: var(--accent1-color);
-  border: transparent solid;
+  background-color: var(--accentGreen);
+  outline: none;
 }
 
 ::-webkit-input-placeholder {
@@ -86,7 +90,7 @@ textarea:focus {
 
 .input-container input:active {
   border-radius: 0.2rem;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
 }
 
 #Error {

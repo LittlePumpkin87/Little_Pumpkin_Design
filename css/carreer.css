@@ -13,7 +13,7 @@ Career
   content: '';
   position: absolute;
   width: 0.5rem;
-  background-color: var(--background-color2);
+  background-color: var(--accentOrange);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -39,12 +39,12 @@ Career
   content: '';
   position: absolute;
   right: -1rem;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   z-index: 1;
   width: 2rem;
   height: 2rem;
-  border-top: var(--background-color2) 0.3rem solid;
-  border-left: var(--background-color2) 0.3rem solid;
+  border-top: var(--accentOrange) 0.3rem solid;
+  border-left: var(--accentOrange) 0.3rem solid;
   border-radius: 0rem 1rem 1rem 1rem;
   width: 3rem;
 }
@@ -62,28 +62,26 @@ Career
 .right::after {
   left: -1rem;
   border-radius: 1rem 0rem 1rem 1rem;
-  border-right: var(--background-color2) 0.3rem solid;
-  border-left: var(--background-color2) 0;
+  border-right: var(--accentOrange) 0.3rem solid;
+  border-left: var(--accentOrange) 0;
 }
 
 .content {
   position: relative;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   padding: 0.3rem;
   width: 8rem;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  border: var(--background-color2) 0.3rem solid;
+  border: var(--accentOrange) 0.3rem solid;
   border-radius: 0.5rem 2rem 0.5rem 2rem;
-  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
-  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 .Details_right {
   position: relative;
   z-index: 900;
   padding: 1rem;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   min-width: 20rem;
   border-radius: 1rem;
 }
@@ -92,13 +90,13 @@ Career
   position: relative;
   z-index: 900;
   padding: 1rem;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   min-width: 20rem;
   border-radius: 1rem;
 }
 
 #Education {
-  background-color: var(--background-color2);
-  border: solid var(--accent1-color) 0.3rem;
+  background-color: var(--accentOrange);
+  border: solid var(--accentGreen) 0.3rem;
   border-radius: 0.5rem 2rem 0.5rem 2rem;
 }

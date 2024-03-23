@@ -4,8 +4,8 @@ Calculator
 
 #calc {
   display: block;
-  border: solid var(--background-color2);
-  background-color: var(--accent1-color);
+  border: solid var(--accentOrange);
+  background-color: var(--accentGreen);
   border-radius: 1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -15,7 +15,7 @@ Calculator
 }
 
 #calc output {
-  background-color: var(--background-color2);
+  background-color: var(--accentOrange);
   font-family: monospace;
   display: inline-block;
   margin-top: 2rem;
@@ -32,9 +32,9 @@ fieldset {
 }
 
 #calc button {
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   color: var(--text-color);
-  border: solid 0.2rem var(--background-color2);
+  border: solid 0.2rem var(--accentOrange);
   border-radius: 0.3rem;
   margin: 0.7rem;
   cursor: pointer;

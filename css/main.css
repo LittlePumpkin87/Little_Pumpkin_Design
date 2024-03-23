@@ -2,12 +2,17 @@
 ROOT
 ==========================================================================*/
 :root {
-  --background-color: #292929;
-  --background-color2: #d1681d;
-  --Subtlebackground-color: #eb995e;
-  --accent1-color: #012900;
+  --BackgroundGrey: #293233;
+  --backgroundBrown: #524034;
+  --backgroundBlue: #3B777C;
+  --accentGreen: #567333;
+  --accentOrange: #d1681d;
+  --accentBlue: #5CBCC4;
   --text-color: #FFF;
-  --shadow: rgba(0, 0, 0, 0.767);
+  --accentShadow: #1c110a;
+  --shadow: drop-shadow(#1C110A 0 0.2rem 0.2rem) drop-shadow(#1C110A 0 -0.2rem 0.2rem);
+  --shadowSubtle: drop-shadow(#1C110A 0 0.2rem 0.2rem);
+  --shadowGreen: drop-shadow(var(--accentGreen) 0 0.2rem 0.2rem) drop-shadow(var(--accentGreen) 0 -0.2rem 0.2rem);
   --fonthead: "Berkshire Swash";
   --fonttext: "Signika Negative";
 }
@@ -18,9 +23,10 @@ ROOT
 @font-face {
   font-display: swap;
   font-family: "Signika Negative";
+
   font-style: normal;
   font-weight: 400;
-  src: url("../Fonts/signika-negative-v21-latin-regular.woff2") format("woff2");
+  src: url("/Fonts/signika-negative-v21-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -28,7 +34,7 @@ ROOT
   font-family: "Berkshire Swash";
   font-style: normal;
   font-weight: 400;
-  src: url("../Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
+  src: url("/Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
 }
 
 /*==========================================================================
@@ -44,7 +50,7 @@ Basic Design
 }
 
 html {
-  background: var(--background-color);
+  background: var(--BackgroundGrey);
   color: var(--text-color);
   font-family: var(--fonttext);
   text-align: center;
@@ -55,7 +61,7 @@ main {
 }
 
 footer {
-  background-color: var(--background-color2);
+  background-color: var(--accentOrange);
   height: 5rem;
   display: flex;
   justify-content: space-around;
@@ -79,28 +85,28 @@ a {
 .download {
   font-size: 1.5rem;
   border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--background-color2);
-  border-right: solid 0.4rem var(--background-color2);
-  background-color: var(--accent1-color);
+  border-top: solid 0.4rem var(--accentOrange);
+  border-right: solid 0.4rem var(--accentOrange);
+  background-color: var(--accentGreen);
   padding: 0.2rem;
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
-  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 .button {
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   padding: 0.5rem;
   color: var(--text-color);
   font-family: var(--fonttext);
   border-radius: 0.5rem 2rem 2rem 2rem;
-  border: solid 0.2rem var(--background-color2);
-  -webkit-filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
-  filter: drop-shadow(var(--shadow)0 0.6rem 0.3rem);
+  border: solid 0.2rem var(--accentOrange);
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 /*==========================================================================
@@ -114,7 +120,7 @@ Reference Gallery
 
 .RefGallery div {
   border-radius: 2rem 0.5rem 2rem 2rem;
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
   height: 6rem;
   width: 10rem;
   margin: 0 auto;
@@ -122,7 +128,9 @@ Reference Gallery
   display: flex;
   align-items: center;
   justify-content: center;
-  border: var(--background-color2) 0.3rem solid;
+  border: var(--accentOrange) 0.3rem solid;
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 /*==========================================================================
@@ -134,7 +142,7 @@ header {
   grid-template-rows: auto;
   position: fixed;
   z-index: 999;
-  background-color: var(--background-color2);
+  background-color: var(--accentOrange);
   width: 100vw;
   top: 0;
   border-radius: 0.5rem 0.5rem 2rem 2rem;
@@ -158,8 +166,8 @@ nav ul {
 
 nav a {
   border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.2rem var(--accent1-color);
-  border-right: solid 0.2rem var(--accent1-color);
+  border-top: solid 0.2rem var(--accentGreen);
+  border-right: solid 0.2rem var(--accentGreen);
   padding: 0.3rem;
 }
 
@@ -181,25 +189,44 @@ nav li {
 .line {
   fill: none;
   transition: stroke-dasharray 800ms, stroke-dashoffset 800ms;
-  stroke: var(--accent1-color);
+  stroke: var(--accentShadow);
   stroke-width: 6;
   stroke-linecap: round;
+  transition: ease 800ms;
 }
 
 .ham1 .top {
   stroke-dasharray: 40 139;
+
 }
 
 .ham1 .bottom {
   stroke-dasharray: 40 180;
+
+}
+
+.ham {
+  -webkit-filter: var(--shadowGreen);
+          filter: var(--shadowGreen);
+}
+
+.ham.active {
+  -webkit-filter: var(--shadow);
+          filter: var(--shadow);
 }
 
 .ham1.active .top {
   stroke-dashoffset: -98px;
+  stroke: var(--accentGreen);
 }
 
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
+  stroke: var(--accentGreen);
+}
+
+.ham1.active .middle {
+  stroke: var(--accentGreen);
 }
 
 #HamToggle {
@@ -218,8 +245,8 @@ nav li {
 
 .HamburgerLink {
   transform: translate(110vw);
-  transition: ease-out 1000ms;
-  background-color: var(--background-color2);
+  transition: ease-out 800ms;
+  background-color: var(--accentOrange);
   position: absolute;
   width: 100%;
   border-radius: 0.5rem 0.5rem 2rem 2rem;
@@ -227,7 +254,9 @@ nav li {
 
 .HamburgerLink.active {
   transform: translate(60vw);
-  background-color: var(--accent1-color);
+  background-color: var(--accentGreen);
+  -webkit-filter: var(--shadow);
+          filter: var(--shadow);
 }
 
 .HamburgerLink a {
@@ -235,9 +264,11 @@ nav li {
   margin: 0.8rem;
   padding: 0.5rem;
   border-radius: 2rem 0.5rem 2rem 2rem;
-  border-bottom: solid 0.2rem var(--background-color2);
-  border-right: solid 0.2rem var(--background-color2);
+  border-bottom: solid 0.2rem var(--accentOrange);
+  border-right: solid 0.2rem var(--accentOrange);
   padding: 0.3rem;
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
 
 #MobileNav {

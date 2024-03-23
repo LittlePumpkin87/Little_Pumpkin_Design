@@ -23,7 +23,7 @@
 }
 
 .Pumpkin {
-  background-image: url(../images/own_logo/Logo_colored.png);
+  background-image: url(/images/own_logo/Logo_colored.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +31,7 @@
 }
 
 .Grey {
-  background-image: url(../images/own_logo/Logo_grey.png);
+  background-image: url(/images/own_logo/Logo_grey.png);
 }
 
 .Small {
