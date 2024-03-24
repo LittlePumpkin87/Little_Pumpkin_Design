@@ -14,7 +14,5 @@ alert("no bots allowed here")
     if (email.value != email2.value) {
       error.innerHTML = "Email stimmt nicht überein!";
       evt.preventDefault();
-    } else {
-      redirect
     }
   });
