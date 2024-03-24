@@ -1,4 +1,4 @@
-Portfolio and Resume for myself as freelancer and for reference when applying to Jobs
+# Portfolio and Resume for myself as freelancer and for reference when applying to Jobs
 
 need to Create Skill Sections - Ideas of having Pumpkins instead of Stars for "Eperience Level" <-- DONE
 
@@ -6,10 +6,24 @@ Phone Viewports done, Next Steps to optimize for Tablets and Desktop Viewports. 
 
 #Next Steps
 
--- make the Carreer Timeline more interactive
+-- make the Carreer Timeline more interactive <-- DONE
 
--- add a few simple animations to get rid off the static look
+-- add a few simple animations to get rid off the static look <-- DONE
 
--- load text from external files instead of writing them directly in index.html to improve performance
+-- edit pictures and reduce size in slider gallery to improve performance <-- DONE (added JS script for preloading images)
 
--- edit pictures and reduce size in slider gallery to improve performance
+-- Prevent Bots fron spamming through Contact Form <-- DONE with Honeypot Method
+
+# To Do starting 24th March 2024
+
+-- edit View for Desktop Monitors to make it more appealing
+
+-- advance animation on carreer Timeline to make it "grow" as you scroll#
+
+-- tweek the existing animations to improve the smoothenes and overall view
+
+-- Make Skill Section more interactive
+
+-- rewrite Texts
+
+-- add more/different Refrences to Design and Coding Section
