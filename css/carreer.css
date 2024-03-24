@@ -30,18 +30,13 @@ Career
   flex-wrap: wrap;
 }
 
-.content:hover {
-  cursor: pointer;
-}
-
 .container::after {
   /* The "leaf" on the timeline */
   content: '';
   position: absolute;
   right: -1rem;
-  background-color: var(--accentGreen);
   z-index: 1;
-  width: 2rem;
+  background-color: var(--accentGreen);
   height: 2rem;
   border-top: var(--accentOrange) 0.3rem solid;
   border-left: var(--accentOrange) 0.3rem solid;
@@ -66,15 +61,30 @@ Career
   border-left: var(--accentOrange) 0;
 }
 
-.content {
+.content_right {
   position: relative;
   background-color: var(--accentGreen);
   padding: 0.3rem;
   width: 8rem;
+  z-index: 2;
   border: var(--accentOrange) 0.3rem solid;
   border-radius: 0.5rem 2rem 0.5rem 2rem;
   -webkit-filter: var(--shadowSubtle);
           filter: var(--shadowSubtle);
+  animation: bounce-in 1000ms ease 1;
+}
+
+.content_left {
+  position: relative;
+  background-color: var(--accentGreen);
+  padding: 0.3rem;
+  width: 8rem;
+  z-index: 2;
+  border: var(--accentOrange) 0.3rem solid;
+  border-radius: 2rem 0.5rem 2rem 0.5rem;
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
+  animation: bounce-in 1000ms ease 1;
 }
 
 .Details_right {
@@ -84,6 +94,7 @@ Career
   background-color: var(--accentGreen);
   min-width: 20rem;
   border-radius: 1rem;
+  animation: Grow 1000ms ease 1;
 }
 
 .Details_left {
@@ -93,10 +104,5 @@ Career
   background-color: var(--accentGreen);
   min-width: 20rem;
   border-radius: 1rem;
-}
-
-#Education {
-  background-color: var(--accentOrange);
-  border: solid var(--accentGreen) 0.3rem;
-  border-radius: 0.5rem 2rem 0.5rem 2rem;
+  animation: GrowLeft 1000ms ease 1;
 }

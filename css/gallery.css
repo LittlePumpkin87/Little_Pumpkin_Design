@@ -160,6 +160,7 @@ a.slide_btn {
 
 .slide h3 {
   position: absolute;
+  bottom: 0;
   background-color: var(--accentGreen);
   padding: 0.3rem;
   width: 60%;

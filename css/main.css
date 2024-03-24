@@ -36,6 +36,48 @@ ROOT
   font-weight: 400;
   src: url("/Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
 }
+/*==========================================================================
+Animations
+==========================================================================*/
+
+@keyframes Grow {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes GrowLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  80% { transform: translateX(-15px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
 
 /*==========================================================================
 Basic Design
@@ -108,7 +150,6 @@ a {
   -webkit-filter: var(--shadowSubtle);
           filter: var(--shadowSubtle);
 }
-
 /*==========================================================================
 Reference Gallery
 ==========================================================================*/
@@ -178,12 +219,11 @@ nav li {
   justify-content: center;
 }
 
+.hamRotate {
+  transition: 800ms;
+}
 .hamRotate.active {
   transform: rotate(45deg);
-}
-
-.hamRotate180.active {
-  transform: rotate(180deg);
 }
 
 .line {
