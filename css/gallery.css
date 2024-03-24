@@ -86,7 +86,7 @@ Slider Gallery
 }
 
 .slide:nth-of-type(9) {
-  background-image: url(/images/designs/Mononoke.png);
+  background-image: url(/images/designs/Isa_Emotes.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,4 +169,28 @@ a.slide_btn {
   border-left: solid 0.4rem var(--accentOrange);
   -webkit-filter: var(--shadowSubtle);
   filter: var(--shadowSubtle);
+}
+
+/*==========================================================================
+Reference Gallery
+==========================================================================*/
+.RefGallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.RefGallery div {
+  border-radius: 2rem 0.5rem 2rem 2rem;
+  background-color: var(--accentGreen);
+  height: 6rem;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--accentOrange) 0.3rem solid;
+  -webkit-filter: var(--shadowSubtle);
+          filter: var(--shadowSubtle);
 }
