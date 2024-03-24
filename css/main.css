@@ -66,17 +66,40 @@ Animations
   100% { transform: translateX(0); }
 }
 
-@keyframes bounce-in {
+@keyframes enter_right{
   0% {
-    opacity: 0;
-    transform: scale(.3);
+		transform: scale(0, .02) rotate(0) translate(-100px);
+	}
+	50% {
+		transform: scale(1, .02) rotate(30deg) translate(-50px);
+	}
+}
+
+@keyframes enter_left{
+  0% {
+		transform: scale(0, .02) rotate(0) translate(50px);
+	}
+	50% {
+		transform: scale(1, .02) rotate(-30deg) translate(100px);
+	}
+}
+
+@keyframes bounce_scale {
+  0%, 20% {
+    transform: scale(0);
   }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
+  40% {
+    transform: scale(1.5);
   }
-  70% { transform: scale(.9); }
-  100% { transform: scale(1); }
+  60% {
+    transform:scale(0.7);
+  }
+  80%{
+    transform:scale(1.2);
+  }
+  100% {
+    transform:scale(1);
+  }
 }
 
 /*==========================================================================
@@ -123,23 +146,6 @@ a {
   color: var(--text-color);
   font-family: var(--fonthead);
 }
-
-.download {
-  font-size: 1.5rem;
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--accentOrange);
-  border-right: solid 0.4rem var(--accentOrange);
-  background-color: var(--accentGreen);
-  padding: 0.2rem;
-  width: 90vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  -webkit-filter: var(--shadowSubtle);
-          filter: var(--shadowSubtle);
-}
-
 .button {
   background-color: var(--accentGreen);
   padding: 0.5rem;
@@ -147,29 +153,6 @@ a {
   font-family: var(--fonttext);
   border-radius: 0.5rem 2rem 2rem 2rem;
   border: solid 0.2rem var(--accentOrange);
-  -webkit-filter: var(--shadowSubtle);
-          filter: var(--shadowSubtle);
-}
-/*==========================================================================
-Reference Gallery
-==========================================================================*/
-.RefGallery {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.RefGallery div {
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  background-color: var(--accentGreen);
-  height: 6rem;
-  width: 10rem;
-  margin: 0 auto;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: var(--accentOrange) 0.3rem solid;
   -webkit-filter: var(--shadowSubtle);
           filter: var(--shadowSubtle);
 }
@@ -364,12 +347,6 @@ nav li {
     margin-right: 4rem;
   }
 
-  .content {
-    width: 10.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-
   .CertName {
     font-size: 1.5rem;
   }
@@ -399,20 +376,7 @@ nav li {
   }
 }
 
-@media only screen and (min-width: 820px) {
-  .content {
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-  }
-}
-
 @media only screen and (min-width: 1000px) {
-  .content {
-    margin-right: 6rem;
-    margin-left: 6rem;
-    width: 50rem;
-  }
 
   .SkillName {
     margin-left: 12rem;

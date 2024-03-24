@@ -11,7 +11,7 @@ preload_image("/images/designs/Logo_Mockup_KD.png");
 preload_image("/images/designs/Sommer.jpg");
 preload_image("/images/designs/Own_logo_Mockup.png");
 preload_image("/images/designs/Lots_of_emotes.png");
-preload_image("/images/designs/Mononoke.png");
+preload_image("/images/designs/Isa_Emotes.png");
 preload_image("/images/designs/Main_logo_design.png");
 
 //Nav disapears when scroll down
@@ -37,11 +37,31 @@ $("#HamToggle").on("click", function () {
         $(HamburgerLink).toggleClass("active");
     }
 });
+// Carreer scroll animation
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        return;
+      }
+      entry.target.classList.remove('active');
+    });
+  });
+  const ContentRight = document.querySelectorAll('.content_right');
+  const ContentLeft = document.querySelectorAll('.content_left');
+  const PumkpinRight =document.querySelectorAll('.PumpkinMore_right');
+  const PumkpinLeft = document.querySelectorAll('.PumpkinMore_left');
+
+  ContentRight.forEach((element) => observer.observe(element));
+  ContentLeft.forEach((element) => observer.observe(element));
+  PumkpinRight.forEach((element) => observer.observe(element));
+  PumkpinLeft.forEach((element) => observer.observe(element));
+  
 // Carreer Detail show/hide on click
 
 document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".content_right");
+    const contents = document.querySelectorAll(".PumpkinMore_left");
     contents.forEach(function (content) {
         content.addEventListener("click", function () {
             const Display = content.nextElementSibling;
@@ -62,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const contentsL = document.querySelectorAll(".content_left");
+    const contentsL = document.querySelectorAll(".PumpkinMore_right");
 
     contentsL.forEach(function (content) {
         content.addEventListener("click", function () {
