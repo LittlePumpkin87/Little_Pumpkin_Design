@@ -18,7 +18,7 @@ Phone Viewports done, Next Steps to optimize for Tablets and Desktop Viewports. 
 
 -- edit View for Desktop Monitors to make it more appealing
 
--- advance animation on carreer Timeline to make it "grow" as you scroll#
+-- advance animation on carreer Timeline to make it "grow" as you scroll <-- started rework
 
 -- tweek the existing animations to improve the smoothenes and overall view
 
@@ -27,3 +27,5 @@ Phone Viewports done, Next Steps to optimize for Tablets and Desktop Viewports. 
 -- rewrite Texts
 
 -- add more/different Refrences to Design and Coding Section
+
+-- add Accessibility features and texts
