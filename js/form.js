@@ -9,15 +9,11 @@ function countUpTimer() {
 
 
 function checkAdress() {
-    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 10){
-    alert("no bots allowed here")
-    return false;
-  }
-   else if  (document.getElementById("adress").value !== "" && document.getElementById("time").value < 10){
-    alert("no bots allowed here")
+    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 5 ){
+alert("no bots allowed here")
       return false;
     }
-   else return true;
+    return true;
   };
 
   let formContact = document.querySelector(".box");
