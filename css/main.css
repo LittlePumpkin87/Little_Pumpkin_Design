@@ -301,10 +301,11 @@ h1 {
   filter:
   drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem)
   drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem)
-  drop-shadow(var(--accentGreen)1rem 1rem 1rem)
-  drop-shadow(var(--accentGreen)-1rem -1rem 1rem)
-  drop-shadow(var(--accentGreen)1rem 1rem 2rem)
-  drop-shadow(var(--accentGreen)-1rem -1rem 2rem);
+  drop-shadow(var(--accentGreen)1rem 1rem 10rem)
+  drop-shadow(var(--accentGreen)-1rem -1rem 10rem)
+  drop-shadow(var(--accentGreen)1rem 1rem 10rem)
+  drop-shadow(var(--accentGreen)-1rem -1rem 10rem);
+  z-index: -99;
 }
 
 a {
