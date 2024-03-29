@@ -16,9 +16,9 @@ Phone Viewports done, Next Steps to optimize for Tablets and Desktop Viewports. 
 
 # To Do starting 24th March 2024
 
--- edit View for Desktop Monitors to make it more appealing
+-- edit View for Desktop Monitors to make it more appealing <-- DONE
 
--- advance animation on carreer Timeline to make it "grow" as you scroll <-- started rework
+-- advance animation on carreer Timeline to make it "grow" as you scroll <-- DONE
 
 -- tweek the existing animations to improve the smoothenes and overall view
 
