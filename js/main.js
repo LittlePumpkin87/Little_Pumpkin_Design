@@ -14,6 +14,12 @@ preload_image("/images/designs/Lots_of_emotes.png");
 preload_image("/images/designs/Isa_Emotes.png");
 preload_image("/images/designs/Main_logo_design.png");
 
+/* //Scroll Property (percent of page scrolled)
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
+  }, false); */
+
 //Nav disapears when scroll down
 
 let prevScrollpos = window.scrollY;
@@ -38,6 +44,12 @@ $("#HamToggle").on("click", function () {
     }
 });
 // Carreer scroll animation
+
+let options = {
+    root: document.querySelector("#Career"),
+    rootMargin: "100px",
+    threshold: 1.0,
+  };
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

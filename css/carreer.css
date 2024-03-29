@@ -168,8 +168,9 @@ Career
 }
 
 .PumpkinMore_right.active {
-  animation: bounce_scale 1500ms ease-in 1;
+  animation: bounce_scale 1800ms ease 1;
 }
+
 .PumpkinMore_left.active {
-  animation: bounce_scale 1500ms ease-in 1;
+  animation: bounce_scale 1800ms ease 1;
 }

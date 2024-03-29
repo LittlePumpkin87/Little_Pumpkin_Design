@@ -87,18 +87,38 @@ Animations
 @keyframes bounce_scale {
   0%, 20% {
     transform: scale(0);
+    rotate:(0deg);
   }
   40% {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    rotate:-20deg;
   }
   60% {
     transform:scale(0.7);
+    rotate: 20deg;
   }
   80%{
-    transform:scale(1.2);
+    transform:scale(1.5);
+    rotate:-20deg;
   }
   100% {
     transform:scale(1);
+    rotate: 0deg;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100%{
+    rotate: 0deg;
+  }
+  40% {
+    rotate: 10deg;
+  }
+  60% {
+    rotate: -20deg;
+  }
+  80% {
+    rotate: 0deg;
   }
 }
 

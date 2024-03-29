@@ -1,9 +1,23 @@
+let timer = setInterval(countUpTimer, 1000);
+let totalSeconds = 0;
+
+function countUpTimer() {
+  ++totalSeconds;
+  let seconds = totalSeconds ;
+  document.getElementById('time').value = seconds;
+}
+
+
 function checkAdress() {
-    if (document.getElementById("adress").value !== "") {
-alert("no bots allowed here")
+    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 10){
+    alert("no bots allowed here")
+    return false;
+  }
+   else if  (document.getElementById("adress").value !== "" && document.getElementById("time").value < 10){
+    alert("no bots allowed here")
       return false;
     }
-    return true;
+   else return true;
   };
 
   let formContact = document.querySelector(".box");
