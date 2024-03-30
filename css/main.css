@@ -298,13 +298,10 @@ h1 {
   margin: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  filter:
-  drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem)
-  drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem)
-  drop-shadow(var(--accentGreen)1rem 1rem 10rem)
-  drop-shadow(var(--accentGreen)-1rem -1rem 10rem)
-  drop-shadow(var(--accentGreen)1rem 1rem 10rem)
-  drop-shadow(var(--accentGreen)-1rem -1rem 10rem);
+  -webkit-filter:
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)1rem 1rem 10rem) drop-shadow(var(--accentGreen)-1rem -1rem 10rem) drop-shadow(var(--accentGreen)1rem 1rem 10rem) drop-shadow(var(--accentGreen)-1rem -1rem 10rem);
+          filter:
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)1rem 1rem 10rem) drop-shadow(var(--accentGreen)-1rem -1rem 10rem) drop-shadow(var(--accentGreen)1rem 1rem 10rem) drop-shadow(var(--accentGreen)-1rem -1rem 10rem);
   z-index: -99;
 }
 
@@ -1219,6 +1216,7 @@ Career
   .RefGallery div {
     width: 20vw;
   }
+
   .RefGallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1226,6 +1224,7 @@ Career
   .slider {
     max-width: 50vw;
   }
+
   .previous_btn {
     left: 30rem;
   }
@@ -1233,21 +1232,26 @@ Career
   .next_btn {
     right: 30rem;
   }
+
   .slide_buttons {
     width: 50vw;
     margin: 0 auto;
   }
 
   #header {
+    grid-template-columns: -webkit-max-content 2fr;
     grid-template-columns: max-content 2fr;
   }
+
   nav ul {
     justify-content: left;
     margin-top: 2rem;
   }
+
   nav a {
     margin-left: 5rem;
   }
+
   #header img {
     margin-left: 3rem;
   }
