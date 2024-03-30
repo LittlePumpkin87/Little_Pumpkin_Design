@@ -298,11 +298,10 @@ h1 {
   margin: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  -webkit-filter:
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem);
   filter:
-  drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem)
-  drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem)
-  drop-shadow(var(--accentGreen)1rem 1rem 10rem)
-  drop-shadow(var(--accentGreen)-1rem -1rem 10rem);
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem);
   z-index: -99;
 }
 
