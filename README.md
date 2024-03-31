@@ -1,4 +1,4 @@
-# Portfolio and Resume for myself as freelancer and for reference when applying to Jobs
+# Portfolio and Company Webpage for myself as freelancer
 
 need to Create Skill Sections - Ideas of having Pumpkins instead of Stars for "Eperience Level" <-- DONE
 
