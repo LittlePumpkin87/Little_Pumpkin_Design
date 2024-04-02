@@ -31,3 +31,5 @@ Phone Viewports done, Next Steps to optimize for Tablets and Desktop Viewports. 
 -- add Accessibility features and texts
 
 -- add Subdomain for Resume to split Freelancer Webpage from Carreer/Job applying
+
+-- add service section of what kind of service I provide (web design / web development / graphic design / layout for print and digital media)
