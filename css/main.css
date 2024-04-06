@@ -830,29 +830,6 @@ Reference Gallery
 /* ==========================================================================
    Skills + Certificates
    ========================================================================== */
-
-.SkillBar {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
-  border-radius: 2rem 0rem 2rem 0.5rem;
-  border-bottom: solid 0.4rem var(--accentOrange);
-  border-left: solid 0.4rem var(--accentOrange);
-}
-
-.Skill {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 1rem;
-}
-
-.SkillName {
-  display: flex;
-  text-align: left;
-  align-items: center;
-  margin-right: 0.5rem;
-}
-
 .Pumpkin {
   display: flex;
   background-image: url(/images/own_logo/Logo_colored.png);
@@ -863,13 +840,11 @@ Reference Gallery
   width: 3rem;
 }
 
-.Grey {
-  background-image: url(/images/own_logo/Logo_grey.png);
-}
-
 .Small {
-  width: 2rem;
-  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
   margin: 0.5rem;
 }
 
@@ -962,189 +937,6 @@ Minesweeper
 
 .hidden {
   display: none;
-}
-
-/* ==========================================================================
-Career
-========================================================================== */
-.download {
-  font-size: 1.5rem;
-  border-radius: 2rem 0.5rem 2rem 2rem;
-  border-top: solid 0.4rem var(--accentOrange);
-  border-right: solid 0.4rem var(--accentOrange);
-  background-color: var(--accentGreen);
-  padding: 0.2rem;
-  width: 90vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  -webkit-filter: var(--shadowSubtle);
-  filter: var(--shadowSubtle);
-}
-
-.timeline {
-  /* The actual timeline */
-  position: relative;
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
-.timeline::after {
-  /* The actual timeline (the vertical ruler) */
-  content: '';
-  position: absolute;
-  width: 0.5rem;
-  background-color: var(--accentOrange);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -0.2rem;
-}
-
-/* Container around content */
-.container {
-  padding: 0.7rem 2rem;
-  position: relative;
-  width: 50%;
-  border-radius: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container::after {
-  /* The "leaf" on the timeline */
-  content: '';
-  position: absolute;
-  right: -1rem;
-  z-index: 1;
-  background-color: var(--accentGreen);
-  height: 2rem;
-  border-top: var(--accentOrange) 0.3rem solid;
-  border-left: var(--accentOrange) 0.3rem solid;
-  border-radius: 0rem 1rem 1rem 1rem;
-  width: 3rem;
-}
-
-.left {
-  left: 0;
-  justify-content: left;
-}
-
-.right {
-  left: 50%;
-  justify-content: right;
-}
-
-.right::after {
-  left: -1rem;
-  border-radius: 1rem 0rem 1rem 1rem;
-  border-right: var(--accentOrange) 0.3rem solid;
-  border-left: var(--accentOrange) 0;
-}
-
-.content_right {
-  background-color: var(--accentGreen);
-  padding: 0.3rem;
-  width: 100%;
-  z-index: 2;
-  border: var(--accentOrange) 0.3rem solid;
-  border-radius: 0.5rem 2rem 0.5rem 2rem;
-  -webkit-filter: var(--shadowSubtle);
-  filter: var(--shadowSubtle);
-}
-
-.content_left {
-  background-color: var(--accentGreen);
-  padding: 0.3rem;
-  z-index: 2;
-  border: var(--accentOrange) 0.3rem solid;
-  border-radius: 2rem 0.5rem 2rem 0.5rem;
-  -webkit-filter: var(--shadowSubtle);
-  filter: var(--shadowSubtle);
-  width: 100%;
-}
-
-.content_left.active {
-  -webkit-animation: enter_left 800ms ease 1;
-  animation: enter_left 800ms ease 1;
-}
-
-.content_right.active {
-  -webkit-animation: enter_right 800ms ease 1;
-  animation: enter_right 800ms ease 1;
-}
-
-
-.Details_right {
-  z-index: 900;
-  padding: 1rem;
-  background-color: var(--accentGreen);
-  min-width: 20rem;
-  border-radius: 1rem;
-  -webkit-animation: Grow 1000ms ease 1;
-  animation: Grow 1000ms ease 1;
-}
-
-.Details_left {
-  z-index: 900;
-  padding: 1rem;
-  background-color: var(--accentGreen);
-  min-width: 20rem;
-  border-radius: 1rem;
-  -webkit-animation: GrowLeft 1000ms ease 1;
-  animation: GrowLeft 1000ms ease 1;
-}
-
-.PumpkinMore_left {
-  background-image: url(/images/own_logo/Logo_colored.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 3;
-  height: 3rem;
-  width: 3rem;
-  margin-top: -2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  left: 0;
-  justify-content: left;
-}
-
-.PumpkinMore_left p {
-  margin-top: 1.5rem;
-  z-index: 3;
-}
-
-.PumpkinMore_right p {
-  margin-top: 1.5rem;
-  z-index: 3;
-}
-
-
-.PumpkinMore_right {
-  background-image: url(/images/own_logo/Logo_colored.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 10;
-  height: 3rem;
-  width: 3rem;
-  margin-top: -2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  left: 50%;
-  justify-content: right;
-}
-
-.PumpkinMore_right.active {
-  -webkit-animation: bounce_scale 1800ms ease 1;
-  animation: bounce_scale 1800ms ease 1;
-}
-
-.PumpkinMore_left.active {
-  -webkit-animation: bounce_scale 1800ms ease 1;
-  animation: bounce_scale 1800ms ease 1;
 }
 
 /* ==========================================================================
