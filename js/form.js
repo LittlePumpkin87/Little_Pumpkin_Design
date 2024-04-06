@@ -9,7 +9,7 @@ function countUpTimer() {
 
 
 function checkAdress() {
-    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 5 ){
+    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 30 ){
 alert("no bots allowed here")
       return false;
     }
