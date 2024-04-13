@@ -14,12 +14,6 @@ preload_image("/images/designs/Lots_of_emotes.png");
 preload_image("/images/designs/Isa_Emotes.png");
 preload_image("/images/designs/Main_logo_design.png");
 
-/* //Scroll Property (percent of page scrolled)
-
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
-  }, false); */
-
 //Nav disapears when scroll down
 
 let prevScrollpos = window.scrollY;
@@ -43,79 +37,7 @@ $("#HamToggle").on("click", function () {
         $(HamburgerLink).toggleClass("active");
     }
 });
-// Carreer scroll animation
-
-let options = {
-    root: document.querySelector("#Career"),
-    rootMargin: "100px",
-    threshold: 1.0,
-  };
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        return;
-      }
-      entry.target.classList.remove('active');
-    });
-  });
-  const ContentRight = document.querySelectorAll('.content_right');
-  const ContentLeft = document.querySelectorAll('.content_left');
-  const PumkpinRight =document.querySelectorAll('.PumpkinMore_right');
-  const PumkpinLeft = document.querySelectorAll('.PumpkinMore_left');
-
-  ContentRight.forEach((element) => observer.observe(element));
-  ContentLeft.forEach((element) => observer.observe(element));
-  PumkpinRight.forEach((element) => observer.observe(element));
-  PumkpinLeft.forEach((element) => observer.observe(element));
-  
-// Carreer Detail show/hide on click
-
-document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".PumpkinMore_left");
-    contents.forEach(function (content) {
-        content.addEventListener("click", function () {
-            const Display = content.nextElementSibling;
-            const DetailsOpenLeft = document.querySelectorAll(".Details_left:not(.hidden)");
-            DetailsOpenLeft.forEach(function (detail) {
-                if (detail !== Display) {
-                    detail.classList.add("hidden");
-                }
-            });
-            const DetailsOpenRight = document.querySelectorAll(".Details_right:not(.hidden)");
-            DetailsOpenRight.forEach(function (detail) {
-                if (detail !== Display) {
-                    detail.classList.add("hidden");
-                }
-            });
-            Display.classList.toggle("hidden");
-        });
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const contentsL = document.querySelectorAll(".PumpkinMore_right");
-
-    contentsL.forEach(function (content) {
-        content.addEventListener("click", function () {
-            const Display = content.nextElementSibling;
-            const DetailsOpenLeft = document.querySelectorAll(".Details_left:not(.hidden)");
-            DetailsOpenLeft.forEach(function (detail) {
-                if (detail !== Display) {
-                    detail.classList.add("hidden");
-                }
-            });
-            const DetailsOpenRight = document.querySelectorAll(".Details_right:not(.hidden)");
-            DetailsOpenRight.forEach(function (detail) {
-                if (detail !== Display) {
-                    detail.classList.add("hidden");
-                }
-            });
-            Display.classList.toggle("hidden");
-        });
-    });
-});
-
+ 
 //Gallery
 
 $('.slider').each(function () {

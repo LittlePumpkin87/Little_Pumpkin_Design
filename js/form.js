@@ -9,9 +9,9 @@ function countUpTimer() {
 
 
 function checkAdress() {
-    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 30 ){
-alert("no bots allowed here")
-      return false;
+    if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 10 ){
+window.location.replace("https://little-pumpkin-design.com/thank_you.html");
+return false;
     }
     return true;
   };
@@ -26,3 +26,7 @@ alert("no bots allowed here")
       evt.preventDefault();
     }
   });
+
+  function onSubmit() {
+    document.getElementById("form").submit();
+  }

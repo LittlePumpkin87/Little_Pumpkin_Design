@@ -2,8 +2,8 @@
 <html lang="de">
 
 <head>
-  <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/a9c751d941270.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
-  <meta charset="utf-8" />
+<script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/a9c751d941270.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
+<meta charset="utf-8" />
   <title>Little-Pumpkin-Design</title>
   <meta name="Your local Designer" content="Webdesign Design graphics freelancer" />
   <meta name="viewport" content="width=device-width, initial-scale= 1" />
@@ -54,7 +54,7 @@
         <a href="#AboutMe">Über mich</a>
         <a href="#Designs">Designs</a>
         <a href="#Referenzen">Referenzen</a>
-        <a href="https://resume.little-pumpkin-design.com/">Karriere</a>
+        <a href="https://resume.little-pumpkin-design.com/">Für Recruiter</a>
         <a href="#contact">Kontakt</a>
         <a href="#Service">Dienstleistungen</a>
       </div>
@@ -201,11 +201,10 @@
         </div>
       </ul>
     </div>
-   
 
     <h1 id="contact">Kontakt</h1>
     <div class="form">
-      <script src="js/form.js" defer></script>
+      <script src="js/form.js" defer type="text/javascript"></script>
       <form class="box" action="PHP/form-handler.php" method="post" onsubmit="return checkAdress()">
         <div class="input-container">
           <input type="text" id="vname" name="vname" required placeholder=" ">
@@ -236,7 +235,9 @@
         </div>
         <p>Ihre Nachricht an mich:</p><br>
         <textarea wrap="soft" name="message" required></textarea>
-        <input onclick="document.getElementById('phone').required = false;" class="button submit" type="submit"
+       
+        <input class="button submit" 
+         onclick="document.getElementById('phone').required = false;" type="submit"
           name="button" value="abschicken">
         <br>
         <p id="Error"></p>
