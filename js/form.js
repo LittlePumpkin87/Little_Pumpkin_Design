@@ -10,7 +10,7 @@ function countUpTimer() {
 
 function checkAdress() {
     if (document.getElementById("adress").value !== "" || document.getElementById("time").value < 10 ){
-window.location.replace("https://little-pumpkin-design.com/thank_you.html");
+window.location.replace("https://little-pumpkin-design.com/Bots.html");
 return false;
     }
     return true;

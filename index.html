@@ -2,8 +2,10 @@
 <html lang="de">
 
 <head>
-<script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/a9c751d941270.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
-<meta charset="utf-8" />
+  <script type="text/javascript" data-cmp-ab="1"
+    src="https://cdn.consentmanager.net/delivery/autoblocking/a9c751d941270.js"
+    data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
+    <meta charset="utf-8" />
   <title>Little-Pumpkin-Design</title>
   <meta name="Your local Designer" content="Webdesign Design graphics freelancer" />
   <meta name="viewport" content="width=device-width, initial-scale= 1" />
@@ -20,8 +22,11 @@
   <meta name="msapplication-TileColor" content="#d1681d" />
   <meta name="theme-color" content="#d1681d" />
   <link rel="stylesheet" href="css.min.css" />
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
   <script src="node_modules/jquery/dist/jquery.min.js" defer type="text/javascript"></script>
   <script src="js/main.js" defer type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/e1eb99f8cb.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -139,7 +144,7 @@
 
     <h1 id="Service">Dienstleistungen</h1>
     <div class="CertGrid">
-  
+
       <div class="Cert">
         <div class="Pumpkin Small"></div>
         <h3 class="CertName">Individuelle Logogestaltung</h3>
@@ -205,7 +210,7 @@
     <h1 id="contact">Kontakt</h1>
     <div class="form">
       <script src="js/form.js" defer type="text/javascript"></script>
-      <form class="box" action="PHP/form-handler.php" method="post" onsubmit="return checkAdress()">
+      <form class="box" action="PHP/form-handler.php" method="POST" onsubmit="return checkAdress()">
         <div class="input-container">
           <input type="text" id="vname" name="vname" required placeholder=" ">
           <label for="vname">Vorname*</label>
@@ -235,9 +240,8 @@
         </div>
         <p>Ihre Nachricht an mich:</p><br>
         <textarea wrap="soft" name="message" required></textarea>
-       
-        <input class="button submit" 
-         onclick="document.getElementById('phone').required = false;" type="submit"
+
+        <input class="button submit" onclick="document.getElementById('phone').required = false;" type="submit"
           name="button" value="abschicken">
         <br>
         <p id="Error"></p>
@@ -251,7 +255,10 @@
 <footer>
   <a href="Impressum.html">Impressum</a>
   <a href="policy.html">Datenschutzerklärung</a>
-  <a href="https://www.linkedin.com/in/littlepumpkindesign">LinkedIn Profil</a>
+  <a href="https://www.linkedin.com/in/littlepumpkindesign" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://twitter.com/LPumpkin_Design" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://www.instagram.com/_little_pumpkin_design_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/LittlePumpkin87" target="_blank"><i class="fa-brands fa-github"></i></a>
 </footer>
 
 </html>
