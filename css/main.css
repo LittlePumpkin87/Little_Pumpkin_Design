@@ -15,7 +15,6 @@ ROOT
   --shadowGreen: drop-shadow(var(--accentGreen) 0 0.2rem 0.2rem) drop-shadow(var(--accentGreen) 0 -0.2rem 0.2rem);
   --fonthead: "Berkshire Swash";
   --fonttext: "Signika Negative";
-  --FontBrand: "FontAwesomeBrands";
 }
 
 /* ==========================================================================
@@ -1020,11 +1019,11 @@ Minesweeper
   }
 
   .previous_btn {
-    left: 30rem;
+    left: 10rem;
   }
 
   .next_btn {
-    right: 30rem;
+    right: 10rem;
   }
 
   .slide_buttons {
